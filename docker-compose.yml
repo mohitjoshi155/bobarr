@@ -30,7 +30,7 @@ services:
     command: yarn start
     restart: unless-stopped
     ports:
-      - 3000:3000
+      - 3000:$PORT
 
   postgres:
     container_name: bobarr-postgresql
